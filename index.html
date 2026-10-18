@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Professional, responsive ready-made websites for businesses, restaurants, portfolios and online stores. Built by Azam Ali, professional web designer.">
+  <meta name="theme-color" content="#081225">
+  <title>WebStore by Azam | Ready-Made Websites for Your Business</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="announcement">✨ Ready-made websites, tailored for your next big idea <a href="#websites">Explore collection →</a></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="WebStore home">
+      <span class="brand-mark">W</span><span><b>Web<span>Store</span></b><small>DESIGNED BY AZAM</small></span>
+    </a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#home" class="active">Home</a><a href="#websites">Websites</a><a href="#about">About</a><a href="#process">How it works</a><a href="#contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button" id="search-toggle" aria-label="Search websites">⌕</button>
+      <button class="cart-button" id="cart-open" aria-label="Open cart">Cart <span id="cart-count">0</span></button>
+      <a class="button button-small" href="#contact">Let's talk <span>↗</span></a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-grid"></div>
+      <div class="hero-copy">
+        <div class="eyebrow light"><span class="pulse"></span> YOUR IDEA. YOUR WEBSITE. YOUR FUTURE.</div>
+        <h1>Launch your business<br>with a website that <span>works.</span></h1>
+        <p>Premium, modern website designs for ambitious businesses. Choose a design, make it yours, and get ready to grow online.</p>
+        <div class="hero-buttons"><a class="button" href="#websites">Browse websites <span>→</span></a><a class="button button-outline-light" href="#process">How it works</a></div>
+        <div class="hero-proof"><div class="avatar-stack"><i>A</i><i>W</i><i>+</i></div><div><strong>Made with care</strong><small>Design-led websites by Azam Ali</small></div></div>
+      </div>
+      <div class="hero-visual" aria-label="Website preview examples">
+        <div class="floating-note note-top">✦ Clean, modern design</div>
+        <div class="browser-card browser-back back-left"><div class="browser-bar"><i></i><i></i><i></i></div><div class="mock-left"><b>Build your next<br>big idea.</b><span></span><span></span><span></span></div></div>
+        <div class="browser-card browser-main"><div class="browser-bar"><i></i><i></i><i></i><span>yourbrand.com</span></div><div class="mock-site"><div class="mock-nav">BRAND <small>HOME &nbsp; ABOUT &nbsp; CONTACT</small></div><div class="mock-banner"><span>MADE FOR YOU</span><b>Make your<br>next move.</b><em>EXPLORE NOW ↗</em></div><div class="mock-products"><i></i><i></i><i></i></div></div></div>
+        <div class="browser-card browser-back back-right"><div class="browser-bar"><i></i><i></i><i></i></div><div class="mock-right"><span>GROW YOUR BUSINESS</span><b>Better online.<br>Better business.</b><div></div></div></div>
+        <div class="floating-note note-bottom">↗ Responsive on every screen</div>
+      </div>
+      <div class="hero-bottom"><span>DESIGN THAT MAKES A DIFFERENCE</span><span>BUSINESS · PORTFOLIO · E-COMMERCE · MORE</span></div>
+    </section>
+
+    <section class="benefits section-wrap">
+      <div class="benefit"><span class="benefit-icon">↗</span><div><b>Fast turnaround</b><p>Get started without the long wait.</p></div></div>
+      <div class="benefit"><span class="benefit-icon">◇</span><div><b>Responsive design</b><p>Looks great on phone and desktop.</p></div></div>
+      <div class="benefit"><span class="benefit-icon">⌘</span><div><b>Easy to customize</b><p>Make the design feel like your brand.</p></div></div>
+      <div class="benefit"><span class="benefit-icon">♡</span><div><b>Personal support</b><p>Talk directly with your designer.</p></div></div>
+    </section>
+
+    <section class="catalog section-wrap" id="websites">
+      <div class="section-heading">
+        <div><div class="eyebrow">THE COLLECTION</div><h2>Find your next <span>website.</span></h2><p>Explore designs made for different kinds of businesses.</p></div>
+        <div class="catalog-tools"><label class="search-box" id="search-box"><span>⌕</span><input id="search-input" type="search" placeholder="Search websites..." aria-label="Search websites"></label><select id="sort-select" aria-label="Sort websites"><option value="featured">Featured</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option></select></div>
+      </div>
+      <div class="filter-row" role="group" aria-label="Filter websites">
+        <button class="filter-chip selected" data-filter="All">All websites <span>6</span></button>
+        <button class="filter-chip" data-filter="Business">Business</button><button class="filter-chip" data-filter="E-commerce">E-commerce</button><button class="filter-chip" data-filter="Food">Food & restaurant</button><button class="filter-chip" data-filter="Portfolio">Portfolio</button>
+      </div>
+      <div class="product-grid" id="product-grid">
+        <article class="product-card" data-id="business" data-category="Business" data-price="10999" data-name="Business Pro">
+          <div class="product-preview preview-business"><div class="preview-nav"><b>northstar<span>.</span></b><small>ABOUT &nbsp; SERVICES &nbsp; CONTACT</small></div><div class="preview-business-copy"><small>YOUR PARTNER IN PROGRESS</small><b>Big ideas.<br>Real results.</b><i>Let's work together ↗</i></div><div class="preview-orb"></div><span class="preview-label">BUSINESS</span></div>
+          <div class="product-info"><div class="product-category">BUSINESS WEBSITE <span class="tag">POPULAR</span></div><h3>Business Pro</h3><p>A confident online home for your company or agency.</p><div class="product-bottom"><div><strong>₹10,999</strong><del>₹15,999</del></div><button class="add-button" data-add="business">+ Add</button></div><button class="details-link" data-details="business">View details ↗</button></div>
+        </article>
+        <article class="product-card" data-id="ecommerce" data-category="E-commerce" data-price="12999" data-name="ShopLaunch">
+          <div class="product-preview preview-shop"><div class="preview-nav"><b>FORME<span>.</span></b><small>SHOP &nbsp; STORY &nbsp; BAG (0)</small></div><div class="shop-copy"><small>THE NEW EVERYDAY</small><b>Find your<br>everyday essential.</b><i>SHOP COLLECTION →</i></div><div class="shop-product"><div class="bag-shape"></div><div class="bag-shadow"></div></div><span class="preview-label">E-COMMERCE</span></div>
+          <div class="product-info"><div class="product-category">ONLINE STORE <span class="tag">SELL ONLINE</span></div><h3>ShopLaunch</h3><p>A stylish storefront concept for your product brand.</p><div class="product-bottom"><div><strong>₹12,999</strong><del>₹18,999</del></div><button class="add-button" data-add="ecommerce">+ Add</button></div><button class="details-link" data-details="ecommerce">View details ↗</button></div>
+        </article>
+        <article class="product-card" data-id="restaurant" data-category="Food" data-price="9999" data-name="Saffron Table">
+          <div class="product-preview preview-food"><div class="preview-nav"><b>SAFFRON TABLE</b><small>MENU &nbsp; OUR STORY &nbsp; BOOK</small></div><div class="food-copy"><small>FRESH · LOCAL · DELICIOUS</small><b>A little taste<br>of happiness.</b><i>EXPLORE MENU ↗</i></div><div class="food-dish"><div></div></div><span class="preview-label">FOOD & DRINK</span></div>
+          <div class="product-info"><div class="product-category">RESTAURANT WEBSITE</div><h3>Saffron Table</h3><p>Show off your menu, story and dining experience.</p><div class="product-bottom"><div><strong>₹9,999</strong><del>₹14,999</del></div><button class="add-button" data-add="restaurant">+ Add</button></div><button class="details-link" data-details="restaurant">View details ↗</button></div>
+        </article>
+        <article class="product-card" data-id="portfolio" data-category="Portfolio" data-price="7999" data-name="Creator Portfolio">
+          <div class="product-preview preview-portfolio"><div class="preview-nav"><b>AZ<span>.</span></b><small>WORK &nbsp; ABOUT &nbsp; SAY HELLO</small></div><div class="portfolio-copy"><small>DESIGNER · CREATOR · BUILDER</small><b>Ideas into<br>digital reality.</b><i>VIEW MY WORK ↗</i></div><div class="portfolio-shape"></div><span class="preview-label">PORTFOLIO</span></div>
+          <div class="product-info"><div class="product-category">PERSONAL PORTFOLIO</div><h3>Creator Portfolio</h3><p>Present your work, skills and story with confidence.</p><div class="product-bottom"><div><strong>₹7,999</strong><del>₹11,999</del></div><button class="add-button" data-add="portfolio">+ Add</button></div><button class="details-link" data-details="portfolio">View details ↗</button></div>
+        </article>
+        <article class="product-card" data-id="coaching" data-category="Business" data-price="8999" data-name="Coach & Consult">
+          <div class="product-preview preview-coach"><div class="preview-nav"><b>THE NEXT CHAPTER</b><small>PROGRAMS &nbsp; ABOUT &nbsp; BOOK</small></div><div class="coach-copy"><small>YOUR GROWTH STARTS HERE</small><b>Make room<br>for what's next.</b><i>LET'S CONNECT ↗</i></div><div class="coach-sun"></div><span class="preview-label">COACHING</span></div>
+          <div class="product-info"><div class="product-category">COACH / CONSULTANT</div><h3>Coach & Consult</h3><p>Build trust and turn visitors into consultation leads.</p><div class="product-bottom"><div><strong>₹8,999</strong><del>₹12,999</del></div><button class="add-button" data-add="coaching">+ Add</button></div><button class="details-link" data-details="coaching">View details ↗</button></div>
+        </article>
+        <article class="product-card" data-id="realestate" data-category="Business" data-price="11999" data-name="Estate One">
+          <div class="product-preview preview-estate"><div class="preview-nav"><b>ESTATE<span>ONE</span></b><small>BUY &nbsp; RENT &nbsp; CONTACT</small></div><div class="estate-copy"><small>FIND YOUR PLACE</small><b>Space to<br>live your story.</b><i>EXPLORE HOMES ↗</i></div><div class="estate-building"></div><span class="preview-label">REAL ESTATE</span></div>
+          <div class="product-info"><div class="product-category">REAL ESTATE WEBSITE</div><h3>Estate One</h3><p>A polished property showcase for agents and builders.</p><div class="product-bottom"><div><strong>₹11,999</strong><del>₹16,999</del></div><button class="add-button" data-add="realestate">+ Add</button></div><button class="details-link" data-details="realestate">View details ↗</button></div>
+        </article>
+      </div>
+      <div class="empty-state" id="empty-state" hidden>No matching websites found. Try a different search or category.</div>
+      <p class="catalog-note">Prices shown are starting prices for the displayed design package. Final scope, features, hosting and domain costs are confirmed before work begins.</p>
+    </section>
+
+    <section class="about-section" id="about"><div class="about-inner section-wrap">
+      <div class="about-art"><div class="about-frame"><span class="about-spark">✳</span><div class="about-big">DESIGN<br>WITH<br><em>PURPOSE.</em></div><div class="about-signature">Azam Ali <span>↗</span></div></div><div class="about-sticker">YOUR VISION<br>MY CRAFT</div></div>
+      <div class="about-copy"><div class="eyebrow">MEET YOUR DESIGNER</div><h2>Good design should do more than <span>look good.</span></h2><p>I'm Azam Ali, a professional web designer helping businesses build a strong online presence with thoughtful, modern website design.</p><p>Whether you're starting from scratch or ready for a refresh, I'll help you find a design that fits your goals and make the next steps clear.</p><div class="about-points"><span>✓ Clear communication</span><span>✓ Mobile-first thinking</span><span>✓ Personal design support</span></div><a class="button" href="#contact">Work with Azam <span>↗</span></a></div>
+    </div></section>
+
+    <section class="process section-wrap" id="process"><div class="section-heading centered"><div class="eyebrow">SIMPLE FROM START TO FINISH</div><h2>Your website in <span>four steps.</span></h2><p>A clear, straightforward process from choosing a design to launch.</p></div>
+      <div class="process-grid"><div class="process-card"><span class="step-number">01</span><div class="step-icon">⌕</div><h3>Choose a design</h3><p>Browse the collection and pick a website that fits your business.</p></div><div class="process-card"><span class="step-number">02</span><div class="step-icon">✎</div><h3>Share your details</h3><p>Tell me about your brand, content and any changes you need.</p></div><div class="process-card"><span class="step-number">03</span><div class="step-icon">◇</div><h3>Review & refine</h3><p>We confirm the scope, timeline and agreed customizations.</p></div><div class="process-card"><span class="step-number">04</span><div class="step-icon">↗</div><h3>Launch with confidence</h3><p>Get your final files and help with publishing your website.</p></div></div>
+    </section>
+
+    <section class="faq-section"><div class="section-wrap faq-layout"><div><div class="eyebrow">GOOD TO KNOW</div><h2>Questions? <span>Answered.</span></h2><p>Here are a few things clients often ask before getting started.</p><a class="text-link" href="#contact">Ask me something else ↗</a></div><div class="faq-list">
+      <details><summary>What do I get when I buy a website? <span>＋</span></summary><p>The exact deliverables depend on the package we agree on. We will confirm pages, features, editable files and any setup support in writing before starting.</p></details>
+      <details><summary>Can you customize a design for my brand? <span>＋</span></summary><p>Yes. Colors, text, images, branding and other changes can be discussed. Larger feature requests may change the price and timeline.</p></details>
+      <details><summary>Are domain and hosting included? <span>＋</span></summary><p>Unless specifically included in your written quote, domain registration, hosting, paid tools and third-party services are separate costs.</p></details>
+      <details><summary>Can you help me put the website online? <span>＋</span></summary><p>Yes, launch guidance or deployment support can be discussed when we confirm your project scope.</p></details>
+      <details><summary>How do I place an order? <span>＋</span></summary><p>Add a design to your cart and send the enquiry through WhatsApp, or contact me directly by email. Your order is confirmed only after we agree on scope, price and payment terms.</p></details>
+    </div></div></section>
+
+    <section class="contact-section section-wrap" id="contact"><div class="contact-card"><div class="contact-copy"><div class="eyebrow light">LET'S BUILD SOMETHING GOOD</div><h2>Ready to take your<br>business <span>online?</span></h2><p>Tell me what you're building. I'll help you choose the right website and plan the next step.</p><div class="contact-details"><a href="mailto:azamali8294@gmail.com"><span>✉</span> azamali8294@gmail.com</a><a href="tel:+918294241261"><span>☎</span> +91 82942 41261</a></div></div><form class="contact-form" id="contact-form"><h3>Tell me about your project</h3><label>Your name<input name="name" required placeholder="Full name"></label><label>Email address<input type="email" name="email" required placeholder="you@example.com"></label><label>What kind of website do you need?<select name="project" required><option value="">Choose a website type</option><option>Business website</option><option>E-commerce store</option><option>Restaurant website</option><option>Portfolio website</option><option>Coaching / consulting</option><option>Other / not sure yet</option></select></label><label>Project details<textarea name="message" rows="3" placeholder="Tell me a little about your idea..."></textarea></label><button class="button form-submit" type="submit">Send enquiry <span>↗</span></button><small>Opens your email app with your enquiry prepared.</small></form></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="footer-top"><a class="brand brand-footer" href="#home"><span class="brand-mark">W</span><span><b>Web<span>Store</span></b><small>DESIGNED BY AZAM</small></span></a><p>Thoughtful websites for ambitious ideas.</p><div class="footer-links"><a href="#websites">Websites</a><a href="#about">About</a><a href="#process">How it works</a><a href="#contact">Contact</a></div></div><div class="footer-bottom"><span>© <span id="year"></span> WebStore by Azam Ali. All rights reserved.</span><span>Designed with care · <a href="mailto:azamali8294@gmail.com">Get in touch</a></span></div></footer>
+
+  <div class="cart-overlay" id="cart-overlay" hidden></div><aside class="cart-drawer" id="cart-drawer" aria-label="Shopping cart" aria-hidden="true"><div class="cart-head"><div><span class="eyebrow">YOUR SELECTION</span><h2>Your cart <span id="drawer-count">(0)</span></h2></div><button id="cart-close" class="close-button" aria-label="Close cart">×</button></div><div class="cart-items" id="cart-items"></div><div class="cart-empty" id="cart-empty"><span>🛍</span><h3>Your cart is waiting</h3><p>Add a website design to start an enquiry.</p><button class="button" id="continue-shopping">Browse websites</button></div><div class="cart-footer" id="cart-footer" hidden><div class="cart-total"><span>Estimated total</span><strong id="cart-total">₹0</strong></div><small>Final price and project scope will be confirmed before payment.</small><button class="button checkout-button" id="checkout-button">Enquire on WhatsApp ↗</button><button class="text-link clear-cart" id="clear-cart">Clear cart</button></div></aside>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
